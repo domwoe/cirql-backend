@@ -15,5 +15,9 @@
   "bugs": {
     "url": "https://github.com/domwoe/cirql-backend/issues"
   },
-  "homepage": "https://github.com/domwoe/cirql-backend"
+  "homepage": "https://github.com/domwoe/cirql-backend",
+  "dependencies": {
+    "bunyan": "^1.0.0",
+    "firebase": "^1.0.19"
+  }
 }
