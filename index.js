@@ -17,14 +17,6 @@ var fbRef = new Firebase(fbBaseUrl);
 
 var homes = [];
 
-fbRef.child('homes').once('value', function(fbHomes) {
-  fbHomes.forEach(function(fbHome) {
-    var id = fbHome.name();
-    log.info('create home with id: '+id);
-    homes.push({id: id, obj: new Home(id)});
-  });
-});
-
 /**
 /* Listen if new home is added infirebase
 /* and create new home object
