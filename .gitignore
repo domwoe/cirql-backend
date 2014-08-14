@@ -25,4 +25,5 @@ build/Release
 node_modules
 
 # Project configuration
+[branch "develop"]
 config.json
