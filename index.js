@@ -1,4 +1,4 @@
-'use strict'
+'use strict';
 
 var Firebase = require('firebase');
 var bunyan = require('bunyan');
