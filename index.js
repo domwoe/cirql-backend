@@ -24,7 +24,7 @@ var homes = [];
 */
 fbRef.child('homes').on('child_added', function(fbHome) {
   var id = fbHome.name();
-  log.info('created home with id: '+id);
+  log.info({home: id},'created home with id: '+id);
   homes.push({id: id, obj: new Home(id)});
 });
 
@@ -35,7 +35,7 @@ fbRef.child('homes').on('child_removed', function(fbHome) {
   var index = helper.indexOfById(homes,id);
 
   if (index > -1) {
-    log.info('deleted home with id: '+id);
+    log.info({home: id},'deleted home with id: '+id);
     delete homes[index].obj;
     homes.splice(index,1);
   }
