@@ -1,3 +1,11 @@
 {
-  "firebase": "https://cirql.firebaseio.com/"
+  "firebase": "https://cirql.firebaseio.com/",
+  "netatmo": {
+  	"apiUrl": "https://api.netatmo.net/api",
+  	"authorizeUrl": "https://api.netatmo.net/oauth2/authorize",
+  	"reqTokenUrl": "https://api.netatmo.net/oauth2/token",
+  	"clientId": "53e488d71e77597e6d7b25ab",
+  	"clientSecret": "QSLGHe6v92bdEiFKZbmpZab3GBhWkGgI4QSJdcXVDt",
+  	"redirectUrl": "http://shrouded-gorge-5719.herokuapp.com/netatmo"
+  }
 }
