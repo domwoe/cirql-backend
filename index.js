@@ -2,9 +2,24 @@
 'use strict';
 
 var Firebase = require('firebase');
-var bunyan = require('bunyan');
 
-var log = bunyan.createLogger({name: 'cirql-backend'});
+var bunyan = require('bunyan');
+var bunyanLogentries = require('bunyan-logentries');
+
+var log = bunyan.createLogger({
+  name: "backend",
+  streams: [
+    {
+            stream: process.stdout,
+            level: "info"
+        },
+    {
+      level: 'info',
+      stream: bunyanLogentries.createStream({token: 'e103b6d1-907f-4cc7-83b4-8908ef866522'}),
+      type: 'raw'
+    }]
+});
+
 
 var Home = require('./lib/home.js');
 
