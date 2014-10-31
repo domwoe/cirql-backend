@@ -19,6 +19,7 @@
   "dependencies": {
     "bunyan": "^1.0.0",
     "firebase": "^1.0.19",
+    "googlemaps": "^0.1.20",
     "moment-timezone": "^0.2.1",
     "requestretry": "^1.0.4",
     "underscore": "^1.6.0"
