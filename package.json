@@ -20,6 +20,7 @@
     "bunyan": "^1.0.0",
     "bunyan-logentries": "^0.1.0",
     "firebase": "^1.0.19",
+    "geolib": "^2.0.14",
     "googlemaps": "^0.1.20",
     "moment-timezone": "^0.2.1",
     "node-logentries": "^0.1.4",
