@@ -7,5 +7,9 @@
   	"clientId": "53e488d71e77597e6d7b25ab",
   	"clientSecret": "QSLGHe6v92bdEiFKZbmpZab3GBhWkGgI4QSJdcXVDt",
   	"redirectUrl": "http://shrouded-gorge-5719.herokuapp.com/netatmo"
+  },
+  "nefit": {
+  	"apiUrl": "https://139.15.227.106/gService.Frontend/webservice",
+  	"authToken": "c3QuR2FsbGVuOm5OSGtpdHVUYml5WVVESnc="
   }
 }
