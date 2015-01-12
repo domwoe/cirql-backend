@@ -21,7 +21,7 @@ var log = bunyan.createLogger({
 });
 
 
-var Home = require('./lib/home.js'); 
+var Home = require('./lib/home.js');
 
 var helper = require('./lib/helperFuncs.js');
 
@@ -30,6 +30,12 @@ var config = require('./config.json');
 var fbBaseUrl = config.firebase;
 
 var fbRef = new Firebase(fbBaseUrl);
+
+fbRef.child('aSystemStart').set(true);
+var systemBootupTimer = setTimeout(function() {
+    log.info('System has booted');
+    fbRef.child('aSystemStart').set(false);
+}, 45000);
 
 var homes = [];
 
