@@ -40,7 +40,7 @@ var systemBootupTimer = setTimeout(function() {
 var homes = [];
 
 /**
-/* Listen if new home is added infirebase
+/* Listen if a new home is added infirebase
 /* and create new home objec
 */
 fbRef.child('homes').on('child_added', function(fbHome) {
