@@ -30,6 +30,14 @@ var config = require('./config.json');
 var fbBaseUrl = config.firebase;
 
 var fbRef = new Firebase(fbBaseUrl);
+fbRef.auth(process.env.FIREBASE_SECRET, function(error, result) {
+    if (error) {
+        log.warn('Firebase authentication failed' + error);
+    } else {
+
+        log.info('Firebase: Authenticated successfully with payload: ' + result.auth);
+    }
+});
 
 fbRef.child('aSystemStart').set(true);
 var systemBootupTimer = setTimeout(function() {
