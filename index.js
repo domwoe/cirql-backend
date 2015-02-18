@@ -21,7 +21,7 @@ var log = bunyan.createLogger({
 });
 
 require('nodetime').profile({
-    accountKey: NODETIME_ACCOUNT_KEY, 
+    accountKey: process.env.NODETIME_ACCOUNT_KEY, 
     appName: 'cirql-backend'
 });
 
