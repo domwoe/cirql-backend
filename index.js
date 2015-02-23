@@ -20,10 +20,10 @@ var log = bunyan.createLogger({
     }]
 });
 
-require('nodetime').profile({
-    accountKey: process.env.NODETIME_ACCOUNT_KEY, 
-    appName: 'cirql-backend'
-});
+// require('nodetime').profile({
+//     accountKey: process.env.NODETIME_ACCOUNT_KEY, 
+//     appName: 'cirql-backend'
+// });
 
 
 var Home = require('./lib/home.js');
