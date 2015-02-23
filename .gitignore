@@ -1,5 +1,6 @@
 node_modules
 /test.js
 /storageTest.js
+/nefitHelper.js
 
 /npm-debug.log
