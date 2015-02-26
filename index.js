@@ -57,7 +57,7 @@ var homes = [];
 /* and create new home objec
 */
 fbRef.child('homes').on('child_added', function(fbHome) {
-    var id = fbHome.name();
+    var id = fbHome.key();
     log.info({
         home: id
     }, 'created home with id: ' + id);
@@ -70,7 +70,7 @@ fbRef.child('homes').on('child_added', function(fbHome) {
 
 /** Listen if home is deleted and deletes home obj */
 fbRef.child('homes').on('child_removed', function(fbHome) {
-    var id = fbHome.name();
+    var id = fbHome.key();
     var index = helper.indexOfById(homes, id);
 
     if (index > -1) {
