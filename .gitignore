@@ -1,6 +1,7 @@
 node_modules
 /test.js
 /storageTest.js
+/storageHelper.js
 /nefitHelper.js
 /firebase.js
 
