@@ -23,6 +23,7 @@
     "firebase": "^1.0.19",
     "geolib": "^2.0.14",
     "googlemaps": "^0.1.20",
+    "linkedlist": "^1.0.1",
     "moment-timezone": "^0.2.1",
     "node-gcm": "^0.9.15",
     "node-logentries": "^0.1.4",
