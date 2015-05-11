@@ -21,6 +21,7 @@
     "bunyan": "^1.0.0",
     "bunyan-logentries": "^0.1.0",
     "firebase": "^1.0.19",
+    "gcm": "^1.0.1",
     "geolib": "^2.0.14",
     "googlemaps": "^0.1.20",
     "linkedlist": "^1.0.1",
